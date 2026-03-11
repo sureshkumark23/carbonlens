@@ -1,0 +1,60 @@
+{
+  "_description": "Sample factory input for testing — Rajkot forging unit, Feb 2026",
+  "factory": {
+    "name": "Demo Forging Unit",
+    "location": "Rajkot, Gujarat, India",
+    "grid_zone": "GUVNL"
+  },
+  "reporting_period": {
+    "from": "2026-02-01",
+    "to": "2026-02-28"
+  },
+  "energy": {
+    "total_kwh": 48000,
+    "source": "electricity_bill"
+  },
+  "materials": [
+    {
+      "type": "mild_steel_billet",
+      "quantity_kg": 42000,
+      "assumed_scrap_based": true
+    }
+  ],
+  "machines": [
+    {"name": "500T Press", "rated_kw": 75, "count": 2},
+    {"name": "Induction Furnace", "rated_kw": 120, "count": 1},
+    {"name": "Trimming Press", "rated_kw": 30, "count": 2}
+  ],
+  "products": [
+    {
+      "id": "P001",
+      "description": "Crankshaft blank",
+      "hs_code": "720810",
+      "process": "forging",
+      "material": "mild_steel",
+      "quantity_units": 1200,
+      "unit_weight_kg": 4.2,
+      "customer": "OEM-A"
+    },
+    {
+      "id": "P002",
+      "description": "Suspension arm",
+      "hs_code": "870880",
+      "process": "forging",
+      "material": "mild_steel",
+      "quantity_units": 800,
+      "unit_weight_kg": 6.8,
+      "customer": "OEM-B"
+    },
+    {
+      "id": "P003",
+      "description": "Brake bracket",
+      "hs_code": "870840",
+      "process": "forging",
+      "material": "mild_steel",
+      "quantity_units": 2100,
+      "unit_weight_kg": 1.9,
+      "customer": "OEM-C"
+    }
+  ]
+}

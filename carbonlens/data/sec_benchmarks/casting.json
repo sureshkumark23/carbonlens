@@ -1,0 +1,33 @@
+{
+  "_source": "Bureau of Energy Efficiency (BEE) India — SME Cluster Energy Benchmarks",
+  "_updated": "2024",
+  "_units": "kWh per tonne of finished product",
+  "process": "casting",
+  "benchmarks": {
+    "grey_iron": {
+      "min": 500, "typical": 650, "max": 800,
+      "yield_coefficient": 0.70,
+      "notes": "Sand casting, cupola or induction furnace"
+    },
+    "ductile_iron": {
+      "min": 600, "typical": 750, "max": 900,
+      "yield_coefficient": 0.68,
+      "notes": "Magnesium treatment adds process energy"
+    },
+    "aluminium_die": {
+      "min": 400, "typical": 550, "max": 700,
+      "yield_coefficient": 0.85,
+      "notes": "Die casting, high pressure"
+    },
+    "aluminium_sand": {
+      "min": 450, "typical": 600, "max": 750,
+      "yield_coefficient": 0.75,
+      "notes": "Sand casting, lower yield than die"
+    },
+    "brass": {
+      "min": 350, "typical": 480, "max": 600,
+      "yield_coefficient": 0.82,
+      "notes": "Lower melting temperature"
+    }
+  }
+}

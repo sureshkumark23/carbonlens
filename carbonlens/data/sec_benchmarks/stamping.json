@@ -1,0 +1,23 @@
+{
+  "_source": "Bureau of Energy Efficiency (BEE) India — SME Cluster Energy Benchmarks",
+  "_updated": "2024",
+  "_units": "kWh per tonne of finished product",
+  "process": "stamping",
+  "benchmarks": {
+    "cold_stamping_steel": {
+      "min": 50, "typical": 100, "max": 150,
+      "yield_coefficient": 0.72,
+      "notes": "Cold process, lower energy but high scrap from blanking"
+    },
+    "hot_stamping_steel": {
+      "min": 400, "typical": 550, "max": 700,
+      "yield_coefficient": 0.78,
+      "notes": "Hot stamping for high-strength parts"
+    },
+    "cold_stamping_aluminium": {
+      "min": 40, "typical": 80, "max": 120,
+      "yield_coefficient": 0.75,
+      "notes": "Aluminium sheet stamping"
+    }
+  }
+}
