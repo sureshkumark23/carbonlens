@@ -8,9 +8,9 @@ def compute_carbon_estimates(
     energy_results: list[dict],
     material_results: list[dict],
     total_kwh: float,
-    grid_zone: str = "IN_NATIONAL"
+    grid_zone: str = "india_national"
 ) -> list[dict]:
-    grid_ef = get_grid_emission_factor(grid_zone)
+    grid_ef = get_grid_ef(grid_zone)
     
     outputs = []
     
@@ -21,8 +21,8 @@ def compute_carbon_estimates(
         m_result = mat_lookup.get(product_id, {})
         
         material_type = e_result.get("material", "mild_steel")
-        is_scrap = e_result.get("assumed_scrap_based", True)
-        mat_ef = get_material_emission_factor(material_type, scrap_based=is_scrap)
+        # is_scrap = e_result.get("assumed_scrap_based", True)
+        mat_ef = get_material_ef(material_type)
         
         sec_mean = e_result["sec_benchmark"]["typical"]
         sec_std = sec_mean * SEC_UNCERTAINTY

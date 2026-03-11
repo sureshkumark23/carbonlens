@@ -3,7 +3,7 @@ from core.emission_factors.sec_lookup import get_sec
 def attribute_energy(total_kwh: float, products: list[dict]) -> list[dict]:
     weights = []
     for product in products:
-        sec = get_sec_benchmark(product["process"], product["material"])
+        sec = get_sec(product["process"], product["material"])
         tonnes = (product["quantity_units"] * product["unit_weight_kg"]) / 1000
         weight = sec["typical"] * tonnes
         weights.append({
